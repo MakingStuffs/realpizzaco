@@ -5,7 +5,7 @@ import logo from '../../assets/images/logo-full.png'
 
 const NavBar: React.FC = () => {
   return (
-    <nav>
+    <nav className="main-navigation">
       <img className="logo" src={logo} />
       <ul className="links">
         <li>

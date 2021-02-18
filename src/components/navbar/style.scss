@@ -1,5 +1,5 @@
-nav {
-  background-color: transparent;
+.main-navigation {
+  background-color: var(--red);
   color: var(--off-white);
   display: flex;
   justify-content: space-between;
@@ -7,6 +7,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 3;
 
   &.scrolling {
     background-color: var(--red);
@@ -15,7 +16,7 @@ nav {
 
   .logo {
     margin: 1rem;
-    width: 150px;
+    width: 100px;
     object-fit: contain;
   }
 
@@ -25,7 +26,8 @@ nav {
 
     li {
       display: inline-block;
-      padding: 1rem;
+      padding: 1rem 0.5rem;
+      font-size: 1.2rem;
     }
   }
 }
