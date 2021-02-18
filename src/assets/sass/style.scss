@@ -1,0 +1,51 @@
+:root {
+  --off-black: #09111c;
+  --off-white: #f1faee;
+  --orange: #ffb703;
+  --red: #e63946;
+  --light-blue: #a8dadc;
+  --dark-blue: #1d3557;
+  --light-green: #a8dcb4;
+  --blue: #457b9d;
+  --vh: calc(100vh * 0.01);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'silom';
+  overflow: auto;
+  background-color: var(--off-white);
+  color: var(--off-black);
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-family: 'Phosphate';
+  color: var(--dark-blue);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: var(--orange);
+    color: var(--off-black);
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}

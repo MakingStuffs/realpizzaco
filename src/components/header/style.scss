@@ -1,0 +1,8 @@
+header {
+  min-height: calc(100 * var(--vh));
+  background-color: var(--red);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

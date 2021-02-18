@@ -1,0 +1,31 @@
+nav {
+  background-color: transparent;
+  color: var(--off-white);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &.scrolling {
+    background-color: var(--red);
+    box-shadow: 0 0 0.6rem rgba(black, 0.4);
+  }
+
+  .logo {
+    margin: 1rem;
+    width: 150px;
+    object-fit: contain;
+  }
+
+  .links {
+    display: inline-block;
+    align-self: center;
+
+    li {
+      display: inline-block;
+      padding: 1rem;
+    }
+  }
+}

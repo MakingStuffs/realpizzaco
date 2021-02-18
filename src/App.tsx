@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
+import Section from './components/sections'
+import NavBar from './components/navbar'
+import Header from './components/header'
+import Footer from './components/footer'
 
-function App() {
+import { HashRouter as Router } from 'react-router-dom'
+
+const App: React.FC = () => {
+  // Set the view height for the CSS var
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      '--vh',
+      `${window.innerHeight * 0.01}px`
+    )
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <NavBar />
+        <Header />
+        <Section type="hero" />
+        <Section type="menus" />
+        <Section type="about" />
+        <Section type="contact" />
+        <Footer />
+      </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
