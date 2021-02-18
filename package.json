@@ -1,6 +1,13 @@
 {
-  "name": "app",
-  "version": "0.1.0",
+  "name": "real-piza-co",
+  "author": {
+    "name": "Paul Singh",
+    "url": "https://makingstuffs.co.uk"
+  },
+  "repository": {
+    "url": "https://github.com/MakingStuffs/realpizzaco"
+  },
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
