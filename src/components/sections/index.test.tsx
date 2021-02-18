@@ -1,11 +1,11 @@
 import React from 'react'
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import Section from './index'
 
 describe('<Section />', () => {
   test('renders hero section', () => {
-    render(<Section type="hero" />)
-    const element = screen.getByText('Hero')
+    const { container } = render(<Section type="hero" />)
+    const element = container.querySelector('.hero-section')
     expect(element).toBeInTheDocument()
   })
 })

@@ -1,14 +1,17 @@
 import React, { useState, MouseEvent } from 'react'
 import './style.scss'
+import Card from '../../base/Card'
 import Title from '../../base/Title'
 import FoodMenus from '../../../assets/data/food-menus'
 
 const Menus: React.FC = () => {
   const [activeMenu, setActiveMenu] = useState(FoodMenus.starters)
+  const [menuTitle, setMenuTitle] = useState('Starters')
 
   const handleMenuChange = (event: MouseEvent): void => {
     const id = (event.target as HTMLButtonElement).id
     setActiveMenu(FoodMenus[id])
+    setMenuTitle(id)
   }
 
   return (
@@ -25,8 +28,8 @@ const Menus: React.FC = () => {
           Drinks
         </button>
       </nav>
-      <div className="menu-card">
-        <Title content="Starters" />
+      <Card>
+        <Title content={menuTitle} />
         {activeMenu.map((item, i) => (
           <div key={i} className="menu-item">
             <p className="menu-item__name">
@@ -42,7 +45,7 @@ const Menus: React.FC = () => {
             <p className="menu-item__description">{item.description}</p>
           </div>
         ))}
-      </div>
+      </Card>
     </div>
   )
 }
