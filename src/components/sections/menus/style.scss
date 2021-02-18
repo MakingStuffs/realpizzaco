@@ -1,0 +1,42 @@
+.menu-section {
+  text-align: center;
+
+  .menu-navigation {
+    margin: 2rem 0;
+  }
+
+  .menu-card {
+    background-color: var(--red);
+    border-radius: 20px 20px 0 0;
+    padding: 1rem;
+
+    h2 {
+      color: var(--off-white);
+      margin: 2rem 0;
+    }
+
+    .menu-item {
+      text-align: left;
+      color: var(--off-white);
+
+      .menu-item__name {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'phosphate';
+        font-size: 2.2rem;
+
+        span {
+          font-family: 'silom';
+          font-size: 1.6rem;
+
+          &.menu-item__diet {
+            margin-right: auto;
+            margin-left: 1rem;
+          }
+        }
+      }
+      .menu-item__description {
+      }
+    }
+  }
+}
