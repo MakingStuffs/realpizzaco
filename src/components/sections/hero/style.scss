@@ -27,8 +27,9 @@
 
   .hero-content {
     z-index: 2;
-    padding: 1rem;
+    padding: 1rem 2rem;
     text-shadow: 0 0 0.4rem rgba(black, 0.4);
     font-size: 3.2rem;
+    max-width: 500px;
   }
 }
