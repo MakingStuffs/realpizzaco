@@ -1,6 +1,9 @@
 .card-container {
   background-color: var(--red);
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
   padding: 1.6rem;
   color: var(--off-white);
+  margin: 4rem 0;
+  max-width: 500px;
+  box-shadow: 0 0 0.6rem rgba(black, 0.4);
 }

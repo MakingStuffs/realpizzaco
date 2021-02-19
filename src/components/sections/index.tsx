@@ -7,8 +7,6 @@ const Section: React.FC<{ type: string }> = ({ type }) => {
   switch (type) {
     case 'about':
       return <AboutSection />
-    case 'contact':
-      return <p id="contact">Contact</p>
     case 'hero':
       return <HeroSection />
     case 'menus':
