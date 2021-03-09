@@ -26,7 +26,14 @@ const Contact: React.FC = () => {
           </a>
         </div>
         <address className="address">
-          <a href="tel:02089652237">0208 965 2237</a>
+          <p>
+            <a href="mailto:orders@mlglondon.com" title="Email us">
+              orders@mlglondon.com
+            </a>
+          </p>
+          <p>
+            <a href="tel:02089652237">0208 965 2237</a>
+          </p>
           <p>708D Tudor Estate,</p>
           <p>Abbey Road,</p>
           <p>Park Royal,</p>

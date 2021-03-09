@@ -8,7 +8,14 @@ const Logos: React.FC = () => {
     <div className="logo-section">
       <img src={RealPizzaCo} width="200" />
       <div className="break"></div>
-      <img src={UberEats} width="75" height="75" />
+      <a
+        title="Find us on Uber Eats"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.ubereats.com/gb/london/food-delivery/real-pizza-co/7xk_YxIeTFy7f-3W9BqFvA"
+      >
+        <img src={UberEats} width="75" height="75" />
+      </a>
       <img src={Deliveroo} width="75" height="75" />
     </div>
   )

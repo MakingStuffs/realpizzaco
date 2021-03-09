@@ -23,8 +23,17 @@ const AboutSection: React.FC = () => {
             freshly prepared breakfasts & Lunches.
           </p>
           <p>
-            We have since been excited to announce that our Brunches & handmade
-            Pizza are now available for Delivery via UberEATS
+            We are now excited to announce that our Brunches & handmade Pizza
+            are now available for Delivery via{' '}
+            <a
+              href="//ubereats.com/gb/london/food-delivery/real-pizza-co/7xk_YxIeTFy7f-3W9BqFvA"
+              title="Find us on UberEAT"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              UberEAT
+            </a>
+            !
           </p>
         </Card>
       </div>
