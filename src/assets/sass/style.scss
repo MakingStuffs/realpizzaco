@@ -2,7 +2,7 @@
   --off-black: #09111c;
   --off-white: #f1faee;
   --orange: #ffb703;
-  --red: #e63946;
+  --red: #b92834;
   --light-blue: #a8dadc;
   --dark-blue: #1d3557;
   --light-green: #a8dcb4;
@@ -40,6 +40,7 @@ a {
   color: inherit;
   text-decoration: none;
   transition: 0.3s ease;
+  font-weight: bold;
 
   &:hover {
     background-color: var(--orange);
@@ -83,7 +84,7 @@ button {
 }
 
 p {
-  line-height: 1.7;
+  line-height: 1.9;
   letter-spacing: 1.5pt;
 }
 
