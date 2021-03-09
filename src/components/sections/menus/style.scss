@@ -46,20 +46,41 @@
     .menu-item {
       text-align: left;
       color: var(--off-white);
+      border-bottom: 1px solid rgba(white, 0.3);
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+
+      &:last-child {
+        border-bottom: none;
+      }
 
       .menu-item__name {
         display: flex;
         justify-content: space-between;
         font-family: 'phosphate';
         font-size: 2.2rem;
+        flex-wrap: wrap;
+
+        p {
+          margin: 0;
+        }
+
+        .menu-item__diet-tabs {
+          margin-right: auto;
+          margin-left: 1rem;
+        }
 
         span {
           font-family: 'silom';
           font-size: 1.6rem;
+          align-self: center;
 
           &.menu-item__diet {
-            margin-right: auto;
             margin-left: 1rem;
+
+            &:first-child {
+              margin-left: 0;
+            }
           }
         }
       }

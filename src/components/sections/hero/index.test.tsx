@@ -16,4 +16,9 @@ describe('<HeroSection />', () => {
   test('renders on page', () => {
     expect(element).toBeInTheDocument()
   })
+
+  test('renders the content', () => {
+    const content = element.querySelector('.hero-content')
+    expect(content).toBeInTheDocument()
+  })
 })

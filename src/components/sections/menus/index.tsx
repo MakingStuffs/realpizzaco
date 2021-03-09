@@ -26,8 +26,14 @@ const Menus: React.FC = () => {
           <button id="starters" onClick={handleMenuChange}>
             Starters
           </button>
+          <button id="salads" onClick={handleMenuChange}>
+            Salads
+          </button>
           <button id="pizza" onClick={handleMenuChange}>
             Pizza
+          </button>
+          <button id="sweets" onClick={handleMenuChange}>
+            Sweets
           </button>
           <button id="drinks" onClick={handleMenuChange}>
             Drinks
@@ -37,16 +43,19 @@ const Menus: React.FC = () => {
           <Title content={menuTitle} />
           {activeMenu.map((item, i) => (
             <div key={i} className="menu-item">
-              <p className="menu-item__name">
-                {item.name}
-                {item.diet &&
-                  item.diet.map((diet, i) => (
-                    <span className="menu-item__diet" key={`diet-${i}`}>
-                      ({diet})
-                    </span>
-                  ))}
+              <div className="menu-item__name">
+                <p>{item.name}</p>
+                {item.diet && (
+                  <div className="menu-item__diet-tabs">
+                    {item.diet.map((diet, i) => (
+                      <span className="menu-item__diet" key={`diet-${i}`}>
+                        ({diet})
+                      </span>
+                    ))}
+                  </div>
+                )}
                 <span>£{item.price}</span>
-              </p>
+              </div>
               <p className="menu-item__description">{item.description}</p>
             </div>
           ))}

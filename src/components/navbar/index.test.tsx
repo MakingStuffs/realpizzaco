@@ -10,7 +10,27 @@ describe('<NavBar />', () => {
         <NavBar />
       </Router>
     )
-    const element = container.querySelector('nav')
+    const element = container.querySelector('.main-navigation')
+    expect(element).toBeInTheDocument()
+  })
+
+  test('navbar has logo', () => {
+    const { container } = render(
+      <Router>
+        <NavBar />
+      </Router>
+    )
+    const element = container.querySelector('.main-navigation img.logo')
+    expect(element).toBeInTheDocument()
+  })
+
+  test('navbar has links', () => {
+    const { container } = render(
+      <Router>
+        <NavBar />
+      </Router>
+    )
+    const element = container.querySelector('.main-navigation ul.links')
     expect(element).toBeInTheDocument()
   })
 })
