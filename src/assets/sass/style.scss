@@ -10,6 +10,11 @@
   --vh: calc(100vh * 0.01);
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -26,6 +31,9 @@ h1,
 h2 {
   font-family: 'Phosphate';
   color: var(--dark-blue);
+  font-weight: normal;
+  margin: 4rem 0;
+  font-size: 3.2rem;
 }
 
 a {
@@ -48,4 +56,45 @@ ul {
     margin: 0;
     padding: 0;
   }
+}
+
+button {
+  padding: 1rem;
+  display: inline-block;
+  border: 2px solid transparent;
+  background-color: var(--blue);
+  color: var(--off-white);
+  cursor: pointer;
+  margin: 0.5rem;
+  box-shadow: 0 0 0.6rem rgba(black, 0.4);
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: var(--dark-blue);
+  }
+
+  .selected,
+  &:focus,
+  &:active {
+    border-color: var(--orange);
+    background-color: var(--red);
+    outline: none;
+  }
+}
+
+p {
+  line-height: 1.7;
+  letter-spacing: 1.5pt;
+}
+
+@font-face {
+  font-family: 'phosphate';
+  src: url('../fonts/phosphate.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'silom';
+  src: url('../fonts/silom.ttf') format('truetype');
+  font-display: swap;
 }

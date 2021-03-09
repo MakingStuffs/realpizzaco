@@ -1,15 +1,16 @@
 import React from 'react'
+import HeroSection from './hero'
+import MenuSection from './menus'
+import AboutSection from './about'
 
 const Section: React.FC<{ type: string }> = ({ type }) => {
   switch (type) {
     case 'about':
-      return <p id="about">About</p>
-    case 'contact':
-      return <p id="contact">Contact</p>
+      return <AboutSection />
     case 'hero':
-      return <p>Hero</p>
+      return <HeroSection />
     case 'menus':
-      return <p id="menus">Menus</p>
+      return <MenuSection />
     default:
       return null
   }

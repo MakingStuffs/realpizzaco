@@ -1,0 +1,30 @@
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+
+  .about-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 2rem;
+
+    img {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      object-position: center;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin: 4rem 0;
+  }
+
+  .about-section__content {
+    margin: 2rem;
+  }
+}

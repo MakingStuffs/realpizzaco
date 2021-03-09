@@ -4,7 +4,7 @@ import NavBar from './components/navbar'
 import Header from './components/header'
 import Footer from './components/footer'
 
-import { HashRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 const App: React.FC = () => {
   // Set the view height for the CSS var
